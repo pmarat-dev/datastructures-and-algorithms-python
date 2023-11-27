@@ -26,7 +26,7 @@ def print_postorder(root):
         print(root.val, end=" "),
 
 
-if __name__ == "__main__":
+def build_tree():
     tree = Node(1)
     tree.left = Node(2)
     tree.right = Node(3)
@@ -34,12 +34,15 @@ if __name__ == "__main__":
     tree.left.right = Node(5)
     tree.right.left = Node(6)
     tree.right.right = Node(7)
+    return tree;
 
+
+if __name__ == "__main__":
     print("\nInorder traversal of binary tree is: ")
-    print_inorder(tree)
+    print_inorder(build_tree())
 
     print("\nPreorder traversal of binary tree is: ")
-    print_preorder(tree)
+    print_preorder(build_tree())
 
     print("\nPostorder traversal of binary tree is: ")
-    print_postorder(tree)
+    print_postorder(build_tree())
