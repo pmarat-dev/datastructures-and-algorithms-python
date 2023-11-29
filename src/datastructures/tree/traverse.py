@@ -34,7 +34,7 @@ def build_tree():
     tree.left.right = Node(5)
     tree.right.left = Node(6)
     tree.right.right = Node(7)
-    return tree;
+    return tree
 
 
 if __name__ == "__main__":
